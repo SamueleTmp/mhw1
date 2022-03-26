@@ -11,6 +11,7 @@ body{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 header::before {
@@ -255,14 +256,6 @@ footer p{
         justify-content: center;
     }
     
-    .decorazione{
-        height: 4%;
-        width: 98%;
-        
-        border-radius: 5px;
-        
-        margin: 0px;
-    }
     
     .decorazione:hover{
         width: 5%;
@@ -307,6 +300,31 @@ footer p{
         
     }
  
+
+}
+
+#menutendina{
+    display: none;
+}
+
+#menutendina div{
+    background-color: var(--primary-color);
+    height: 8px;
+    
+    width: 40px;
+    margin: 5px;
+}
+
+
+@media (max-width: 450px){
+    nav a{
+        display: none;
+    }
+
+    #menutendina{
+        display: block;
+    }
+
 
 }
 
