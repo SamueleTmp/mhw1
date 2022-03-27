@@ -63,7 +63,7 @@ nav a{
     padding: 10px;
 }
 
-h1{
+header h1{
     font-weight:lighter ;
     font-style:italic ;
     font-size: 4em;
@@ -231,11 +231,11 @@ footer p{
     
     nav a{
         
-        font-size: 0.6em;       
+        font-size: 1em;       
     }
     
-    h1{
-        font-size: 3em;  
+    header h1{
+        font-size: 4em;  
     }
     
     section{
@@ -267,7 +267,7 @@ footer p{
     
     .notizia h1{
         
-        font-size: 1.3em;
+        font-size: 1.7em;
         
         letter-spacing: 2px;
         
@@ -276,14 +276,14 @@ footer p{
     .notizia p{
         position: relative;
         bottom: 100px;
-        font-size: 1em;        
+        font-size: 1.9em;        
     }
     
     .notizia a{
         
         position: relative;
-        border-radius: 5px;
-        font-size: 0.7em;
+        border-radius: 25px;
+        font-size: 1em;
     }
         
     
@@ -295,7 +295,7 @@ footer p{
     }
     
     footer p{
-        font-size: 1em;
+        font-size: 1.3em;
         text-align: center;
         
     }
@@ -316,7 +316,24 @@ footer p{
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 600px){
+    .notizia h1{
+        
+        font-size: 1.1em;
+        
+    }
+    
+    .notizia p{
+        font-size: 1.5em;        
+    }
+    footer p{
+        font-size: 1.5em;
+     
+        
+    }
+}
+
+@media (max-width: 520px){
     nav a{
         display: none;
     }
@@ -325,7 +342,31 @@ footer p{
         display: block;
     }
 
+    .notizia h1{
+        
+        font-size: 1.2em;
+        
+    }
+    
+    .notizia p{
+        font-size: 1.1em;        
+    }
+    footer p{
+        font-size: 1.2em;
+     
+        
+    }
 
+    .notizia a{
+        
+     
+        border-radius: 25px;
+        font-size: 0.7em;
+    }
+
+    header h1{
+        font-size: 3em;  
+    }
 }
 
 
