@@ -186,7 +186,7 @@ a:hover{
 
 .immagineNotizia img{
     width: 100%;
-    height: 90%;
+    height: auto;
     align-items: center;
     border-radius: 10px;
 }
@@ -239,7 +239,7 @@ footer p{
     }
     
     section{
-        height: 2400px;
+        height: 3500px;
         margin: 5px;
         flex-direction: column;
     }
