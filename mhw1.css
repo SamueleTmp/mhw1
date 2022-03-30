@@ -6,13 +6,21 @@
 body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
 }
 
 
 a{
     text-decoration: none;
     cursor: pointer;
+    border: solid 5px black;
+    background-color: var(--primary-color);
+}
+
+a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 5px var(--primary-color);
+    
 }
 
 header::before {
@@ -58,7 +66,6 @@ nav a{
     color:var(--secondary-color);
     line-height:normal;
     
-    background-color:var(--primary-color);
     border-radius: 25px;
     text-align: center;
     margin: 10px;
@@ -89,9 +96,20 @@ header h1{
     text-align: center;
     margin: auto;
     z-index: 1;
+    padding: 40px;
+
+    background-color: rgba(230, 51, 51, 0.486);
+    border-radius: 25px;
+    border: solid 5px var(--primary-color)
+}
+article{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
+    flex-grow: 1;
     margin: 3%;
     display: flex;
     flex-direction: row;
@@ -101,6 +119,7 @@ section{
 
 
 .FlexContainer{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,6 +131,7 @@ section{
 
 .FlexContainer .notizia{
 
+    flex-grow: 1;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -163,20 +183,16 @@ section{
 
 .notizia a{
     padding: 1%;
-    background-color: var(--primary-color);
+    
     border-radius: 15px;
-    color: black;
     z-index: 1;
     margin: auto;
 }
 
-a:hover{
-    background-color: var(--secondary-color);
-    color: white;
-    
-}
+
 .immagineNotizia{
    
+    
     height: 60%;
     width: 90%;
     padding: 0%;
@@ -189,28 +205,24 @@ a:hover{
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    border: solid 3px var(--primary-color); 
 }
 
 
 
 footer{
-    height: 200px;
-    flex-direction: column;
+    height: 100px;
     background-color: black;
-    align-items: center;
-}
-
-footer p{
     text-align: center;
     font-weight:normal ;
     font-style:normal ;
     font-size: 3em;
     color:whitesmoke;
     line-height:normal;
-    position: relative;
-    top: 40%;
     
 }
+
+
 
 
 
@@ -233,16 +245,8 @@ footer p{
        
         
     }
-
     .FlexContainer{
-        
-        max-height: 48%;
-        width: 100%;
-    }
-
-    .FlexContainer .notizia{
-        height: 100%;
-
+        width: auto;
     }
 
     .decorazione{
@@ -251,11 +255,11 @@ footer p{
 
     .notizia p{
     
-        font-size: 2.5em;    
+        font-size: 2.3em;    
     }
 
     .notizia h1{
-        font-size: 4em;
+        font-size: 3em;
     }
     
 }
@@ -277,14 +281,14 @@ footer p{
 
     .notizia p{
     
-        font-size: 2em;    
+        font-size: 1.5em;    
     }
 
     .notizia h1{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
-    footer p{
+    footer{
         font-size: 2em;
     }
     
@@ -307,16 +311,20 @@ footer p{
     
     .notizia p{
     
-        font-size: 1.5em;    
+        font-size: 1.3em;    
     }
 
     .notizia h1{
-        font-size: 2.5em;
+        font-size: 2.3em;
+    }
+
+    footer{
+        font-size: 1.5em;
     }
     
 }
 
-@media (max-width: 550px){
+@media (max-width: 650px){
     
 
     header h1{
@@ -332,36 +340,28 @@ footer p{
         font-size: 2em;
     }
 
-    footer p{
-        font-size: 1.5em;
+    footer{
+        font-size: 1.2em;
     }
     
 }
 
-@media (max-width: 450px){
+@media (max-width: 550px){
     
 
-    header h1{
-        font-size: 3em;
-    }
     
-    .notizia p{
-    
-        font-size: 1em;    
-    }
-
     .notizia h1{
         font-size: 1.5em;
     }
 
-    footer p{
-        font-size: 1.5em;
+    footer{
+        font-size: 1.2em;
     }
     
 }
 
 
-@media (max-width: 350px){
+@media (max-width: 450px){
     
 
     header h1{
@@ -370,7 +370,7 @@ footer p{
     
     .notizia p{
     
-        font-size: 1em;    
+        font-size: 0.7em;    
     }
     .notizia a{
         font-size: 0.7em;
@@ -380,13 +380,33 @@ footer p{
         font-size: 1em;
     }
 
-    footer p{
+    footer{
         font-size: 1em;
     }
     
 }
 
+@media (max-width: 350px){
+    header h1{
+        font-size: 2em;
+    }
+    
+    .notizia p{
+    
+        font-size: 0.5em;    
+    }
+    .notizia a{
+        font-size: 0.5em;
+    }
 
+    .notizia h1{
+        font-size: 0.7em;
+    }
+
+    footer{
+        font-size: 0.8em;
+    }
+}
 
 
 
